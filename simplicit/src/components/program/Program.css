@@ -1,0 +1,29 @@
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit, sans-serif;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.title{
+    text-align: center;
+    color: #212ea0;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 70px 0 30px;
+    padding: 0;
+    font-family: Outfit, sans-serif;
+    box-sizing: border-box;
+    display: block;
+}
+/*.h2{
+    padding-top: 50px;
+}
+.p{
+    padding-bottom: 40px;
+}*/
+

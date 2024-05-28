@@ -1,0 +1,21 @@
+Install Axios to communication front with backend
+npm i axios
+npm i react-router-dom
+Install Icon
+npm install react-icons --save 
+npm i react-icons //trying this inplace of that
+npm install --save react-toastify
+
+when the General <div> is fixed the content should be relative
+
+But when the General <div> is relate the content should be absolute
+
+https://github.com/mui/material-ui/blob/v5.15.18/docs/data/material/getting-started/templates/sign-up/SignUp.js
+
+https://github.com/mui/material-ui/blob/v5.15.18/docs/data/material/getting-started/templates/sign-in/SignIn.js
+
+
+npm install @mui/material @emotion/react @emotion/styled
+
+
+npm install @mui/icons-material
