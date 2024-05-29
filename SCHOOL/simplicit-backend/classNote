@@ -3,6 +3,9 @@ npm install express
 npm install Thunder client
 npm install nodemon
 downloand and install insomia
+npm install bcrypt
+npm install jsonwebtoken
+npm install dotenv
 
 https://www.urlencoder.org/
 https://graphql.com/tutorials/

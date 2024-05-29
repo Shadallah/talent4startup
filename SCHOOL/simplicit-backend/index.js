@@ -4,6 +4,7 @@ const Student = require('./models/Student.js');
 const StudentRoutes = require('./routes/student.route.js') //importing route
 const SchoolRoutes = require('../simplicit-backend/routes/school.router.js')
 const UserRouter = require('./routes/user.route.js')
+const ExpenseRouter = require('./routes/expense.router.js')
 
 const cors = require('cors')
 const app = express()
@@ -98,6 +99,7 @@ app.put('/api/school/:id', async (req, res)=>{
 app.use('/api/school', SchoolRoutes)
 app.use('/api/students', StudentRoutes)
 app.use('/api/school', UserRouter)
+app.use('/api/expense', ExpenseRouter)
 
 
 

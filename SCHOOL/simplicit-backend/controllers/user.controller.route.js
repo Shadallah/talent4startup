@@ -1,5 +1,8 @@
 const usermood = require('../models/UserModel.js')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+const secret = "abdshad@1_?ssk"
+
 
 
 const signin = async (req, res) =>{
@@ -16,7 +19,14 @@ const signin = async (req, res) =>{
                 return res.status(401).json({message:"Invalid Password"})
             }
         }
-            res.json({message: "Login successful"})
+//generating personalize user token
+        const payload = {userId:user._id}
+        const idtoken = jwt.sign(payload, secret, {expiresIn: '1h'})
+
+            res.json({message: "Login successful",
+            token: idtoken
+                
+            })
     
     } catch (error) {
         res.status(500).json({message: error.message})
