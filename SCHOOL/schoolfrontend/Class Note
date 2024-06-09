@@ -19,3 +19,14 @@ npm install @mui/material @emotion/react @emotion/styled
 
 
 npm install @mui/icons-material
+
+npm install antd --save //for form and input
+
+this removed from the package.json 
+
+"eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },

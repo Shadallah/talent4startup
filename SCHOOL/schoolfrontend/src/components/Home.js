@@ -29,6 +29,11 @@ import {Link} from 'react-router-dom'
       setLoading(false)
     })
   }, [])
+
+  const handleLogout = () =>{
+    localStorage.removeItem('idtoken')
+    Navigate('/')
+  }
   return (
   <div className="p-4">
     <div className="flex justify-center items-center gap-x-4">

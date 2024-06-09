@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema(
 
@@ -8,9 +8,13 @@ const UserSchema = new mongoose.Schema(
         lastname: String,
         email: String,
         password: String
-        
 
+    },
+    {
+        timestamps: true
     }
+
+
 )
 
 const UserModel = mongoose.model('user', UserSchema);

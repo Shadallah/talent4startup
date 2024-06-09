@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import { LightBulbIcon } from '@heroicons/react/24/outline';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -22,9 +23,9 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      {/* <Link color="inherit" href="https://mui.com/">
         Your Website
-      </Link>{' '}
+      </Link>{' '} */}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -64,8 +65,9 @@ const Login = () => {
     //setLoading(true)
     
     axios.post('http://localhost:3001/api/school/login', data)
-    .then(()=>{
+    .then((response)=>{
       //setLoading(false)
+      localStorage.setItem('idtoken', response.data.token);
       toast.success("You have successfull signned in")
       setTimeout(()=>{
         navigate('/Home')
@@ -85,6 +87,7 @@ const Login = () => {
 //       email: data.get('email'),
 //       password: data.get('password'),
 //     });
+//    
 };
 
   return (
@@ -100,7 +103,7 @@ const Login = () => {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
+            <LightBulbIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign in

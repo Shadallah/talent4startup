@@ -18,6 +18,15 @@
     </ul>
 
     <form action="Submit-form" method="post">
+        <label>Fullname</label>
+        <input
+        type="text"
+        id="Name"
+        name="Name"
+        placeholder="Enter your Fullname"
+        />
+        <br><br>
+
         <label>Username</label>
         <input
         type="text"
@@ -33,20 +42,25 @@
         id="password"
         name="password"
         placeholder="Enter your password"
-        /><br><br>
-
-        <label>Fullname</label>
-        <input
-        type="text"
-        id="Name"
-        name="Name"
-        placeholder="Enter your Fullname"
         />
+
+        <label for="Phone Number:"></label>
+        <input 
+        type="tel"
+        id="Phone"
+        name="phone"
+        pattern="[0-9{11}]"
+        min="10"
+        placeholder="XXX-XXX-XXX-XXX"
+        />
+
+        <button
+        input type="Submit" value="Submit"
+        >Submit</button>
+        
+ 
     </form>
 
-    <p id="desc1" class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Aliquid eaque dicta voluptatum beatae mollitia odio nulla commodi sequi! 
-        Neque non nobis itaque dignissimos molestias aspernatur, 
-        quae ut mollitia cumque nihil.</p>
+    <p id="desc1" class="text1">Verify the information before you click submit</p>
 </body>
 </html>
